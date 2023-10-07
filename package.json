@@ -1,0 +1,22 @@
+{
+  "name": "i-hate-everybody",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts -p 9092",
+    "start": "node dist/index.js",
+    "start:dev": "node dist/src/index.js -p 9092",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gnode-api": "^0.2.15"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}
