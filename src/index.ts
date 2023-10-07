@@ -20,7 +20,7 @@ const onUsers = (hMessage: HMessage) => {
     if (!users.has(entity.index) && entity.index !== userId) {
       users.add(entity.index);
       const packet = new HPacket("AvatarEffect", HDirection.TOCLIENT)
-        .appendInt(0)
+        .appendInt(entity.index)
         .appendInt(13)
         .appendInt(0);
       ext.sendToClient(packet);
